@@ -1,5 +1,6 @@
 # Folder view configuration files
 .DS_Store
+*/.DS_Store
 
 #Other files here
 README_localMAC.txt
