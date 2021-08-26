@@ -1,0 +1,6 @@
+GPOD is an Arduino Nano support board that lets you drive NeoPixel
+or other similar serially programmable  RGB/W LEDs.
+
+Buy the hardware on Tindie, and if you want to alter the code or 
+configure it for something other than the out-of-the-box settings, 
+you can use the code and documentation from this repository.
