@@ -1,8 +1,8 @@
-#GPOD GROW LIGHT 
-##by RossGK Tangibles
-**Note - a prettier PDF version of this document is available as well.**
+# GPOD GROW LIGHT 
+## by RossGK Tangibles
+** Note - a prettier PDF version of this document is available as well.**
 
-##What is it?
+## What is it?
 
 GPOD is a wiring interface with user-controls for operating a simple grow light.
 
@@ -10,7 +10,7 @@ It uses just one control button and a display to let you set up a day/night illu
 
 schedule for your plants or seedlings.
 
-###What are the parts?
+### What are the parts?
 
 The GPOD consists of:
 
@@ -24,17 +24,17 @@ Protective Case
 
 SPLEDs in strings, rings or panels
 
-###What are SPLEDs? 
+### What are SPLEDs? 
 
 Often available under the name NeoPixel\* but also available under many other names, they are serially-programmable light-emitting diodes that have individual colour and brightness control.
 
-###What Can I Do?
+### What Can I Do?
 
 Run a plant grow light or use the platform to explore your own lighting control project based around Arduino Nano.
 
   
 
-##Get Started
+## Get Started
 
 If you have a fully assembled GPOD device, you can simply plug in the power, and turn the unit on to get started.
 
@@ -44,7 +44,7 @@ If you have a GPOD kit, you will need a soldering iron to assemble the various p
 
 Beyond use as a grow light, the GPOD system is a simple platform from which you can create new fun and interesting NeoPixel\* projects. The open source code allows you to revise and generate other lighting displays. The display allows you to control your own creations with the press of a button.
 
-###Choosing SPLED Arrays and GPOD Settings 
+### Choosing SPLED Arrays and GPOD Settings 
 
 A NeoPixel string is something many hobbyists and makers may have around home already. These are driven with WS281x chip and may be in an RGB or RGBW format. You may also have other arrays of SPLEDs driven from online sellers which are driven by the same or similar WS2811, -12 or -13 chips, so may vary in data signal timing or format. GPOD helps to manage two common options, with a set of DIP switches on the circuit board. These tiny switches can be set with the tip of a pencil.
 
@@ -54,7 +54,7 @@ There are many control options beyond the two set up on the DIP switch. Your arr
 
 See more about changing the configurations assigned by DIP switches in the code section below.
 
-###Customizing Your GPOD 
+### Customizing Your GPOD 
 
 For advanced users, the GPOD device can be altered to achieve other lighting effects beyond the growl light function. The inner system software (shared on GITHUB) offers broad flexibility.
 
@@ -68,7 +68,7 @@ Customizing your GPOD requires specific skills and abilities. The information be
 
   
 
-##Basic Operation 
+## Basic Operation 
 
 The primary goal of the GPOD system is to operate as a grow light, helping your plants and seedlings along in the dim winter months, or in a home without a bright southern window.
 
@@ -76,7 +76,7 @@ With a full GPOD system on hand you can proceed with the setup below. If you hav
 
   
 
-###GPOD Setup for a Grow Light - Make a Stand 
+### GPOD Setup for a Grow Light - Make a Stand 
 
 Besides connecting the power and turning the unit on, you will also need a simple support structure of some kind for your SPLEDs.
 
@@ -92,7 +92,7 @@ For a very small, simple setup with just a single ring of maybe 12 or 16 SPLEDs 
 
   
 
-###Power Up and Set the Time 
+### Power Up and Set the Time 
 
 Regardless of the setup you choose, you’ll need to remove the snap-on back of the GPOD case by pulling it gently with your fingernails. Inside you’ll see the green wiring blocks. Choose one to receive the wires for your connection. You should strip a few mm worth of wire and twist, maybe tin the bare wire with your soldering iron and some solder. Use a small screwdriver to attach the wires to the wiring block of your choice. Let’s say the one labeled “SET_R” for example. Note the markings of SIG, 5V and GND on the board to align your wires. Ensure those connect to the same signals on your SPLED ring.
 
@@ -102,7 +102,7 @@ Now you can power up your GPOD. After the ‘Hello’ leaf shape, and the GPOD G
 
 Once you’ve chosen the time, the system will proceed on its own. After a minute you’ll see the current time of day, and the illumination should be activated. If you have all the pixels glowing with the same purple colour (for daytime, orange for sunset or sunrise) you’re all set.
 
-###DIP Switches for SPLED Type
+### DIP Switches for SPLED Type
 
 If you have a rainbow of colours, you’ll want to try the DIP switch for your selected bank of LEDs (or just flip them all). To access the DIP switch, just turn off the power, pop open the back panel, and use a pencil tip to flip the desired switch. After adjusting, power up again and see if the process works better.
 
@@ -110,14 +110,14 @@ If you still have colour problems you’ll need to either get a different type o
 
 You can check the status of the DIP switches without removing the back by holding down the user button while turning on the power. The DIP switch positions (and firmware version) will be displayed for a few seconds before going on to the time-setting input screen again.
 
-###Time Adjustment 
+### Time Adjustment 
 
 The specific timing of the on-off lighting isn’t so important to your plants, but if you find yourself wanting to adjust for a drifting time of day, you can adjust the time at any point on the running system by pressing the button again. This returns you to the time-set screen where you can adjust the time. After adjusted, it will pop back into running state after a few seconds without any input.
 
-#CUSTOMIZING YOUR GPOD 
-##For Advanced Users 
+# CUSTOMIZING YOUR GPOD 
+## For Advanced Users 
 
-####Hardware Overview 
+#### Hardware Overview 
 
 The project hardware is comprised of the following elements:
 
@@ -139,7 +139,7 @@ The project hardware is comprised of the following elements:
 
 The Arduino Nano device needs to be programmed with the project software, which is (currently) shared on Github.
 
-####Wiring Channels and SPLED Arrays 
+#### Wiring Channels and SPLED Arrays 
 
 The wiring terminal blocks allow you to connect SPLED arrays, strings, rings etc in four different banks. When the GPOD operates, all the channels or banks are activated, up to a total of 40 elements or pixels per channel.
 
@@ -149,11 +149,11 @@ Since current draw from many individual SPLED elements or ‘pixels’ can get v
 
 You can achieve 40 elements on one channel, or maybe 20 or two, or 10 on each of the four, what ever you wish. If you are altering the firmware, and monitoring the current you can explore other configurations.
 
-####Check Mode on Start-up
+#### Check Mode on Start-up
 
 The DIP switches allow you to mix and match various types of NeoPixel or generic RGBW arrays on different channels. You can check the status of your DIP switches by holding the input button during power up, and you’ll see a DIP overview screen which times out after a few seconds.
 
-####OnBoard SPLED Testing - for Makers
+#### OnBoard SPLED Testing - for Makers
 
 An added bonus on the PCB is that there are six sites for mounting an SPLED directly on the circuit board.  While not practical for a grow-light application, or any other uses that come to mind, it is helpful for makers who are using the platform to learn about SPLEDs or developers trying to explore some additional features.
 
@@ -165,7 +165,7 @@ Since there are three on each channel, you can do sequential effects and pixel i
 
 Again though, these are not very useful with the board mounted in the enclosure, although you can see the glow through the plastic, if that helps.
 
-####A WARNING - Power Connections
+#### A WARNING - Power Connections
 
 As noted above, the external barrel-jack connector feeds 5Volts to the SPLEDs which may need a lot of power. Note that in normal operation this 5V line also powers the Arduino.  Though not numbered on the Nano board,  let’s call it Nano pin 27 (it’s beside pin A7). 
 
@@ -178,7 +178,7 @@ While the GPOD board is in the enclosure, there’s no risk of that, as the USB 
 
   
 
-###Firmware Overview
+### Firmware Overview
 
 The Arduino Nano has software or ‘firmware’ code which is loaded onto that device with the Interactive Arduino Development Environment (IDE). Editing and loading of the software requires familiarity with the C++ programming language, and the IDE setup and operation. While easily used by makers of all ages, there is a learning curve which requires some effort. Beginners are encouraged to visit the Arduino website to explore that ecosystem.
 
@@ -199,7 +199,7 @@ Online tutorials for the Adafruit GFX library for SPLEDs and the SSD1306 OLED di
 
 While support and guidance for altering the GPOD firmware is beyond the resources we can provide, the following information will be helpful for a few tasks that might bring a user to wish to alter the firmware.
 
-####Number of SPLEDs per Channel Block 
+#### Number of SPLEDs per Channel Block 
 
 The firmware is set up for a maximum of 40 SPLEDs per channel. This is intended to let one set up a grow light with enough illumination on any one channel to make their plants happy. It is not recommended to use multiple channels loaded with many SPLEDs simultaneously without closely monitoring the current usage of the circuit. Many LEDs illuminated simultaneously could draw more power than the power supply can provide. This may cause overheating and damage to the device. Proceed with caution and if you are not knowledgable in measuring current consumption do not attempt to employ more than a total of 40 SPLEDs in your entire project without measuring the impact.
 
@@ -211,7 +211,7 @@ All are initially set to 40 in the code. Change only with caution, due to high-c
 
   
 
-####Brightness of the SPLEDs 
+#### Brightness of the SPLEDs 
 
 The SPLEDs are illuminated to full brightness for your plants, but the brightness is controlled by the signals that the Arduino Nano sends to the individual pixels. In initial power up there is a scanning through the pixels and as initial illumination begins there is a two step brightening. The intensity is controlled by some constants.
 
@@ -223,7 +223,7 @@ See also ```MED_BRITE```, and ```LO_BRITE```.
 
   
 
-####Timing of the Sunrise, Daytime, Sunset Illumination Cycles
+#### Timing of the Sunrise, Daytime, Sunset Illumination Cycles
 
 The GPOD device uses a rudimentary system clock to determine on and off times for the illuniation. The time is set by the user upon power up of the circuit. With each press of the button, the clock advances 15 minutes or 0.25 of an hour. Note that the clock is not a precise function and will drift a little over the space of days and weeks.
 
@@ -247,7 +247,7 @@ And also…
    * ```DARK_TM``` – 21.0
    
 
-####Configuration of SPLED Types 
+#### Configuration of SPLED Types 
 
 The SPLEDs may be of a wide variety of types, depending on where you purchased yours. They may be RGB or RGBW or more exotic ones will have GRB colour signalling, or different frequencies of communications. The Adafruit library is beyond the scope of this project, and is not associated with the GPOD project. Users are encouraged to visit Adafruit and explore the library at their leisure. There’s a lot of complexity there, so the GPOD is just setup to handle two situations. If one of the DIP settings works for your SPLEDs then you need not explore changes to the configuration.
 
@@ -267,7 +267,7 @@ Initial setup:
 ```
   
 
-###Configuration of SPLED Illumination colour 
+### Configuration of SPLED Illumination colour 
 
 Colours for the grow light application are chosen pseudo-scientifically. The bulk of the time, the illumination is a purple colour that was chosen to be near the optimal frequency for making plants happy. One sees this colour when viewing grow lights on the International Space Station or laboratory conditions. It is likely however that some plants want a different illumination spectrum.
 
@@ -289,7 +289,7 @@ With these ideas in mind, an advanced user may wish to play with the colour spec
 
   
 
-####Adjust RGB values for other colours if desired 
+#### Adjust RGB values for other colours if desired 
 
 * _**Control / Function**_ _-_ Application of colours
 * _**Firmware File**_  - ```lightFuncs_GPODxP```
@@ -297,7 +297,7 @@ With these ideas in mind, an advanced user may wish to play with the colour spec
 
   
 
-####Disclaimer 
+#### Disclaimer 
 _The GPOD software, device and the RossGK Tangibles project are not affiliated with Adafruit nor Arduino, and we offer no guarantee about the availability of the code libraries nor their efficacy for your application, nor the functions of this device as a plant grow light._
 
 _This system and the associated information contained herein are offered purely as an experimental hobby-oriented platform for home use. The suitability of any of this for your application or conceived use is solely at the discretion of the user. No user-support or guarantees are offered or implied through the sharing of the information in the documentation. The accuracy of information provided heron is similarly not guaranteed and subject to change at any time. It’s the Internet – things gonna change, be inaccurate or just plain wrong._
