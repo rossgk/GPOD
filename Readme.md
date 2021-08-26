@@ -1,7 +1,7 @@
 # GPOD Project Overview
 ### Readme file
 
-*GPOD* is a small project based around an Arduino Nano (5V) with the primary goal
+*GPOD* is a simple  project based around an Arduino Nano (5V) with the primary goal
 of enabling a simple growlight based on serially programmable LED devices. You can 
 sprout some seedlings and coax a plant along in an otherwise dim space for not much 
 cost. Buy the GPOD system fully functional and in an enclosure on Tindie.  A kit of 
