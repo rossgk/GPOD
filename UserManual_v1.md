@@ -6,23 +6,19 @@
 
 GPOD is a wiring interface with user-controls for operating a simple grow light.
 
-It uses just one control button and a display to let you set up a day/night illumination
+It uses just one control button and a display to let you set up a day/night illumination schedule for your plants or seedlings.
 
-schedule for your plants or seedlings.
+GPOD is sold on Tindie.com  _**(Available shortly!)**_
 
 ### What are the parts?
 
 The GPOD consists of:
 
-Circuit board
-
-Arduino\* Nano (5V version)
-
-Power Supply
-
-Protective Case
-
-SPLEDs in strings, rings or panels
+- Circuit board
+- Arduino\* Nano (5V version)
+- Power Supply
+- Protective Case
+- SPLEDs in strings, rings or panels
 
 ### What are SPLEDs? 
 
@@ -64,7 +60,7 @@ Customizing your GPOD requires specific skills and abilities. The information be
 
   
 
-**NOTE: \*Arduino, Adafruit and NeoPixel are all trademarks of their respective owners**
+\* **NOTE: \*Arduino, Adafruit and NeoPixel are all trademarks of their respective owners**
 
   
 
