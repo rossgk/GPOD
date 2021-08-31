@@ -10,6 +10,8 @@ Perhaps the simplest design is no stand at all. Just use existing shelves, and s
 ### The Yoghurt Stand
 An easy-to-make stand is using a yoghurt or similar tub or can, and cutting away one side.  A few holes punched in the bottom (soon to be the "top") will allow you to attach your SPLED ring or array, and another hole will allow you to route the control and power wires out to the GPOD controller.
 
+The snap-on lid for the GPOD is the 'back' of the unit. You can mount that with some double-sided tape against the top of the yoghurt container. Or you can just sit the unit along side the light stand, or screw it down to the surface if you wish. (The photos show a unit with very short wiring, but with a longer wire between your control unit and lights, you can place it as convenient for your location). 
+
 The pictures here will show one constructed for that purpose. 
 
 ### The Stick Stand
