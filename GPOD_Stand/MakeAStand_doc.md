@@ -1,4 +1,4 @@
-#A Simple Grow Light Stand
+# A Simple Grow Light Stand
 _**Make a stand for your GPOD-based grow light.**_
 ### Why a Stand?
 With a GPOD grow light controller and some serially programmable LED lights (WS2812 etc) you can generate the violet-spectrum light your plants and seedlings like in a day/night cycle with little cost and effort. But you'll need some way to suspend the light above your plant pots or trays.  That's where a simple stand come in.
